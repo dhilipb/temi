@@ -1,0 +1,3 @@
+include ':temi'
+include ':app'
+rootProject.name = "JackysTemi"
