@@ -9,7 +9,7 @@
     tools:context="com.infitech.temi.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -17,9 +17,41 @@
         android:gravity="center_horizontal|center_vertical"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
-        android:text="Hello!"
+        android:text="Say, Hey Temi!"
         android:textColor="#FFFFFF"
         android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
