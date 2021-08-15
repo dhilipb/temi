@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements Robot.AsrListener
         try {
             robot = Robot.getInstance(); // get an instance of the robot in order to begin using its features.s
         } catch (Exception ex) {
-            Log.e("21 Create Exception", ex + "");
+            Log.e("Create Exception", ex + "");
         }
     }
 
@@ -76,19 +76,6 @@ public class MainActivity extends AppCompatActivity implements Robot.AsrListener
             }
         }
     }
-
-    public void startQuestion() {
-        setQuestionAnswers("Hello, I'm Temi, a robot assistant. Could you please confirm if your name is Mr. Roger Woods?", "Yes", "No");
-
-        txtAnswer1.setOnClickListener(view -> {
-            speak("Thank you for the confirmation. Mr. Roger Woods, it's time for your afternoon medicine");
-            askMedicine();
-        });
-        txtAnswer2.setOnClickListener(view -> {
-            callNurse();
-        });
-    }
-
 
     @Override
     public void onAsrResult(final @NonNull String asrResult) {
